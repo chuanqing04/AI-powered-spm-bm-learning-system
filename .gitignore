@@ -1,0 +1,205 @@
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+frontend/.env
+frontend/.env.*
+backend/.env
+backend/.env.*
+
+# Keep example env files if you make them
+!.env.example
+!frontend/.env.example
+!backend/.env.example
+
+
+# =========================
+# Frontend dependencies
+# =========================
+node_modules/
+frontend/node_modules/
+.pnp/
+.pnp.js
+
+
+# =========================
+# Frontend build output
+# =========================
+dist/
+build/
+frontend/dist/
+frontend/build/
+
+
+# =========================
+# Vite / frontend cache
+# =========================
+.vite/
+frontend/.vite/
+
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+frontend/*.tsbuildinfo
+
+
+# =========================
+# Backend Python virtual environment
+# =========================
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+backend/.venv/
+backend/env/
+backend/ENV/
+
+
+# =========================
+# Python cache files
+# =========================
+__pycache__/
+backend/__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+
+# =========================
+# Python build / package files
+# =========================
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+
+# =========================
+# Pytest / coverage / test cache
+# =========================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage/
+.nyc_output/
+
+
+# =========================
+# Backend uploads / generated files
+# =========================
+backend/uploads/
+backend/audio/
+backend/generated/
+backend/temp/
+backend/tmp/
+
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+backend/*.log
+frontend/*.log
+
+
+# =========================
+# Cache folders
+# =========================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+
+# =========================
+# Cloudflare local files
+# =========================
+.wrangler/
+.dev.vars
+frontend/.wrangler/
+frontend/.dev.vars
+
+
+# =========================
+# Render / deployment local files
+# =========================
+.render/
+
+
+# =========================
+# Editor folders
+# =========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# =========================
+# Operating system files
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+*.temp
+
+
+# =========================
+# Local certificates / keys
+# =========================
+*.pem
+*.key
+*.crt
+
+
+# =========================
+# Optional local-only notes
+# =========================
+notes.txt
+todo.txt
+scratch.txt
