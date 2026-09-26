@@ -1,0 +1,44 @@
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi
+uvicorn
+
+# ── Data Validation ───────────────────────────────────────────────────────────
+pydantic
+email-validator
+
+# ── AI / ML ───────────────────────────────────────────────────────────────────
+openai                         # GPT-4 API (essay scoring + question generation)
+google-genai                   # Replacing GPT-4 for now
+transformers                   # XLM-RoBERTa (essay grading model)
+torch                          # Required by Transformers
+sentencepiece                  # For XLM-RoBERTa tokenizer
+faster-whisper                 # Faster Whisper ASR model for speech transcription
+silero-vad                     # Voice Activity Detection (detects speech/silence in audio)
+edge-tts
+
+# ── Supporting ML libs ────────────────────────────────────────────────────────
+numpy                          # Whisper and Transformers both need this
+librosa                        # Audio loading, resampling, feature extraction
+soundfile                      # Audio file I/O used by librosa
+jiwer                          # WER / MER / WIL calculation for ASR evaluation
+datasets                       # HuggingFace Datasets — loads audio for fine-tuning
+accelerate                     # HuggingFace Accelerate — required by Trainer
+evaluate                       # HuggingFace Evaluate — WER metric during training
+langdetect                     # Language detection for text preprocessing (e.g. essays)
+
+# ── Environment ───────────────────────────────────────────────────────────────
+python-dotenv
+
+# ── File uploads (for audio/essay submission) ─────────────────────────────────
+python-multipart
+aiofiles                       # Async file I/O for saving uploaded audio files
+
+# ── System dependencies (install separately, NOT via pip) ─────────────────────
+# ffmpeg  →  required by librosa (m4a/mp4 decoding) and Whisper (audio transcription)
+#            Windows : winget install ffmpeg (run in PowerShell)
+#            macOS   : brew install ffmpeg
+#            Linux   : sudo apt install ffmpeg
+
+# ── Database (MongoDB) ───────────────────────────────────────────────────────
+pymongo                       # MongoDB driver for Python (NoSQL database)
+certifi                       # SSL certificates for secure MongoDB connections
